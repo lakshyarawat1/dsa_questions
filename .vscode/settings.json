@@ -3,5 +3,6 @@
     "*.ejs": "html",
     "ostream": "cpp"
   },
-  "C_Cpp.default.compilerPath": ""
+  "C_Cpp.default.compilerPath": "",
+  "C_Cpp.errorSquiggles": "disabled"
 }
