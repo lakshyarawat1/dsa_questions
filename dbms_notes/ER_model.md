@@ -65,3 +65,38 @@
 - Partial Participation : Single line
 - Cardinality Ratio : Line with 1 or M
 
+## Extended ER Model
+
+- When complexity of data increases, ER model is extended to include more concepts.
+
+### Specialization
+
+- Splitting up the entity set into further sub entity sets on the basis of their functionalities, specialities and features.
+- Top-down approach.
+- For ex : Employee entity can be split into Manager, Clerk etc.
+- Have a 'is-a' relationship.
+- Represented by triangle.
+- Refines the DB schema.
+
+### Generalization
+
+- Reverse of specialization
+- Certain properties of multiple entities are clubbed together to form a new entity.
+- 'is-a' relationship.
+- For ex : Manager, Clerk can be clubbed into Employee entity.
+- Bottom-up approach.
+- Makes DB schema more generic.
+
+### Attribute Inheritence
+
+- Both specialization and generalization can be used to inherit attributes.
+- The attributes of higher level entity sets are inherited by lower level entity sets.
+
+### Participation Inheritence
+
+- If a parent entity set participates in a relationship then its child entity set will also participate in that relationship.
+
+### Aggregation
+
+- Applied to treat relationships as higher-level entities. We can call it Abstract Entity.
+- Avoid redundency by aggregating relationships as an entity set itself.
