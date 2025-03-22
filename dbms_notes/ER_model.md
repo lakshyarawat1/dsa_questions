@@ -65,3 +65,20 @@
 - Partial Participation : Single line
 - Cardinality Ratio : Line with 1 or M
 
+## Extended ER Model
+
+- Enhanced ER model with additional concepts.
+
+### Specialization
+
+- Splitting up the entity set into further sub entity sets on the basis of their functionalities, specialities and features.
+- Its a top-down approach.
+- For example, Employee entity can be split into Manager and Worker entities.
+- Always have a 'is-a' relationship.
+- Depicted by triangle.
+- Why ?
+    - Certain attributes may only be applicable to certain sub-entities.
+    - Distinctive features can be easily identified.
+    - We apply specialization to refine DB design.
+
+### Generalization
