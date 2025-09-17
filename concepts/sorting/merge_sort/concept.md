@@ -14,7 +14,7 @@
 ### Complexity
 
 - Time complexity: O(n log n)
-- Space complexity: O(n)
+- Space complexity: O(n) 
 
 ## Code 
 
@@ -28,10 +28,11 @@ void merge(std::vector<int>& arr, int left, int mid, int right) {
     std::vector<int> leftVec(arr.begin() + left, arr.begin() + mid + 1);
     std::vector<int> rightVec(arr.begin() + mid + 1, arr.begin() + right + 1);
 
-    // Merge the two halves back into the original array
+    // Merge the two halves back into the original array 
     int i = 0, j = 0, k = left;
 
     while (i < leftVec.size() && j < rightVec.size()) {
+        // compares all elements and sorts them
         if (leftVec[i] <= rightVec[j]) {
             arr[k++] = leftVec[i++];
         } else {
@@ -54,7 +55,7 @@ void mergeSort(std::vector<int>& arr, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;
 
-        // Recursively sort the two halves
+        // Recursively sort the two halves until only one element is left in each array
         mergeSort(arr, left, mid);
         mergeSort(arr, mid + 1, right);
 
